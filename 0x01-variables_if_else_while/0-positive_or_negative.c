@@ -5,6 +5,7 @@
  *main - main function
  *
  *Return: always 0 (Success)
+ */
 int main(void)
 {
 int n;
