@@ -21,8 +21,8 @@ _putchar(' ');
 _putchar(' ');
 _putchar(k + '0');
 }
- else;
-(k >= 1)
+else
+(k >= 1);
 _putchar(',');
 _putchar(' ');
 _putchar((k / 10) + '0');
