@@ -12,22 +12,22 @@ for (j = 0; j < 10; j++)
 k = j * i;
 if (j == 0)
 {
-_putchar(k + '0\n');
+_putchar(k + '0');
 }
 if (k < 10 && j != 0)
 {
-_putchar(','\n);
-_putchar(' '\n);
-_putchar(' '\n);
-_putchar(k + '0\n');
+_putchar(',');
+_putchar('\n');
+_putchar('\n');
+_putchar(k + '0');
 }
 else
 if (k >= 1)
 {
-_putchar(',\n');
+_putchar(',');
 _putchar('\n');
-_putchar((k / 10) + '0\n');
-_putchar((k % 10) + '0\n');
+_putchar((k / 10) + '0');
+_putchar((k % 10) + '0');
 }
 }
 }
