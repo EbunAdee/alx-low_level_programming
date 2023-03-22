@@ -21,7 +21,7 @@ _putchar(' ');
 _putchar(' ');
 _putchar(k + '0');
 }
-else
+ else;
 (k >= 1)
 _putchar(',');
 _putchar(' ');
