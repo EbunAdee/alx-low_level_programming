@@ -22,7 +22,7 @@ _putchar(' ');
 _putchar(k + '0');
 }
 else
-if (k >= 1);
+if (k >= 1)
 {
 _putchar(',');
 _putchar(' ');
