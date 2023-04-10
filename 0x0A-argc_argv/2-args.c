@@ -1,10 +1,18 @@
 #include <stdio.h>
 
-int main(__attribute__((unused)) int argc, char **argv)
+/**
+ * main - Prints all arguments it receives.
+ * @argc: The number of arguments supplied to the program.
+ * @argv: An array of pointers to the arguments.
+ *
+ * Return: Always 0.
+ */
+int main(int argc, char *argv[])
 {
-	while (*argv)
-	{
-		printf("%s\n", *argv++);
-	}
+	int arg;
+
+	for (arg = 0; arg < argc; arg++)
+		printf("%s\n", argv[arg]);
+
 	return (0);
 }
