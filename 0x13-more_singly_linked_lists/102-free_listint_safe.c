@@ -11,7 +11,7 @@ size_t free_listint_safe(listint_t **h)
 {
 	size_t nodes = 0;
 	listint_t *cur, *next;
-	
+
 	if (!h || !*h)
 		return (0);
 	cur = *h;
@@ -26,6 +26,6 @@ size_t free_listint_safe(listint_t **h)
 		cur = next;
 	}
 	*h = NULL;
-	
+
 	return (nodes);
 }
