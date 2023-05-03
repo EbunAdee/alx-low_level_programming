@@ -1,52 +1,31 @@
+#include <stdlib.h>
 #include "lists.h"
 
-size_t looped_listint_count(listint_t *head);
-size_t free_listint_safe(listint_t **h);
-
 /**
- * looped_listint_count - Counts the number of unique nodes
- *                      in a looped listint_t linked list.
- * @head: A pointer to the head of the listint_t to check.
+ * free_listint_safe - frees a listint_t linked list.
+ * @h: pointer to the pointer to the first element of the list.
  *
- * Return: If the list is not looped - 0.
- *         Otherwise - the number of unique nodes in the list.
+ * Return: the size of the list that was freed.
  */
-size_t looped_listint_count(listint_t *head)
+size_t free_listint_safe(listint_t **h)
 {
-	listint_t *snail, *cheetah;
-	size_t nodes = 1;
-
-	if (head == NULL || head->next == NULL)
+	size_t nodes = 0;
+	listint_t *cur, *next;
+	
+	if (!h || !*h)
 		return (0);
+	cur = *h;
 
-	snail = head->next;
-	snail = (head->next)->next;
-
-	while (snail)
+	while (cur)
 	{
-		if (snail == cheetah)
-		{
-			snail = head;
-			while (snail != cheetah)
-			{
-				nodes++;
-				snail = snail->next;
-				snail = snail->next;
-			}
-
-			snail = snail->next;
-			while (snail != cheetah)
-			{
-				nodes++;
-				snail = snail->next;
-			}
-
-			return (nodes);
-		}
-
-		snail = snail->next;
-		cheetah = (cheetah->next)->next;
+		nodes++;
+		next = cur->next;
+		free(cur);
+		if (next >= cur)
+			break;
+		cur = next;
 	}
-
-	return (0);
+	*h = NULL;
+	
+	return (nodes);
 }
