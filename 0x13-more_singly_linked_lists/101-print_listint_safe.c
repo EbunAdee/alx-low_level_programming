@@ -33,5 +33,5 @@ size_t print_listint_safe(const listint_t *head)
 		printf("[%p] %d\n", (void *)snail, snail->n);
 		nodes++;
 	}
-	return (count);
+	return (nodes);
 }

@@ -30,7 +30,7 @@ listint_t *find_listint_loop(listint_t *head)
 		}
 
 		snail = snail->next;
-		cheetah = cheetah->next->next
+		cheetah = cheetah->next->next;
 	}
 
 	return (NULL);
