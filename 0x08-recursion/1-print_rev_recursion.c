@@ -1,6 +1,6 @@
 #include "main.h"
-/* DECRIPTION: A function that prints a reverse of a string.
- *
+/*
+ * DECRIPTION: A function that prints a reverse of a string.
  */
 
 void _print_rev_recursion(char *s);
@@ -9,6 +9,6 @@ void _print_rev_recursion(char *s);
 	{
 		return;
 	}
-	_print_rev_recursion (s + 1);
+	_print_rev_recursion(s + 1);
 	_putchar (*s);
 }
