@@ -2,8 +2,8 @@
 
 /**
  * power_root - returns the natural square root of a number.
- * @n: input number.
- * @c: iterator.
+ * @i: input number.
+ * @j: iterator.
  * Return: square root or -1.
  */
 int power_root(int i, int j)
