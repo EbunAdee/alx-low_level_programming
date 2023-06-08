@@ -16,8 +16,8 @@ int _strlen_recursion(char *s)
 /**
  * comparism - compares each character of the string.
  * @s: string
- * @n1: smallest iterator.
- * @n2: biggest iterator.
+ * @a1: smallest iterator.
+ * @a2: biggest iterator.
  * Return: .
  */
 int comparism(char *s, int a1, int a2)
