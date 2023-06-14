@@ -13,6 +13,7 @@ char *_strdup(char *str)
 {
 	char *dupli;
 	int m, n;
+
 	if (str == NULL)
 	{
 	return (NULL);
