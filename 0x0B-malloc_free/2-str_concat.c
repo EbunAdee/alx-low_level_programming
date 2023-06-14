@@ -3,7 +3,7 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	char *conat;
+	char *concat;
 	int i = 0, j = 0, m, n;
 
 	if (s1 == NULL)
