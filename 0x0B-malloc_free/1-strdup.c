@@ -22,13 +22,14 @@ char *_strdup(char *str)
     for (m = 0; str[m] != '\0'; m++)
     {
 	dupli = malloc((m + 1) * sizeof(char));
+    }
 
     if (dupli == NULL)
     {
         return (NULL);
     }
     
-    for (int n = 0; n <= m; n++)
+    for (n = 0; n <= m; n++)
     {
 	dupli[n] = str[n];
     }
