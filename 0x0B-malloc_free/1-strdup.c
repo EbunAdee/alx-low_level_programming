@@ -17,19 +17,19 @@ char *_strdup(char *str)
 	{
 	return (NULL);
 	}
-	
+
 	for (m = 0; str[m] != '\0'; m++)
 	{
 		;
 	}
-	
+
 	dupli = malloc((m + 1) * sizeof(char));
-	
+
 	if (dupli == NULL)
 	{
-		return (NULL);
+	return (NULL);
 	}
-	
+
 	for (n = 0; n <= m; n++)
 	{
 		dupli[n] = str[n];
