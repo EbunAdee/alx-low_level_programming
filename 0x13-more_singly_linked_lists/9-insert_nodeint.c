@@ -14,7 +14,7 @@ iinclude "lists.h"
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-	listint_t *n, *dupli = *head;
+	listint_t *newnode, *dupli = *head;
 	unsigned int node;
 
 	newnode = malloc(sizeof(listint_t));
